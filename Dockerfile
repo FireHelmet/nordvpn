@@ -1,7 +1,7 @@
-FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy
+FROM ghcr.io/linuxserver/baseimage-debian:bookworm
 LABEL maintainer="Julio Gutierrez julio.guti+nordvpn@pm.me"
 
-ARG NORDVPN_VERSION=3.17.4
+ARG NORDVPN_VERSION=3.18.2
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y && \
